@@ -1,3 +1,19 @@
+# Bugjaeger repository: legacy files + new Android toolkit
+
+> **New project:** this repository now includes a separate Android companion app under [`app/`](app/) with a modern Gradle build. It provides device information and copy-ready ADB/Fastboot command references, plus a GitHub Actions workflow that produces an installable debug APK. See [ANDROID_TOOLKIT.md](ANDROID_TOOLKIT.md).
+
+**Important:** the original APKs below are legacy binaries, and the repository does not include their original Android source code. The new toolkit is a separate companion app; it does not yet execute ADB/Fastboot over USB or flash partitions. Use the build workflow to obtain its APK after the build succeeds.
+
+## Build the new toolkit APK
+1. Open the repository's **Actions** tab.
+2. Select **Build Bugjaeger Toolkit APK** and open a successful run.
+3. Download the `bugjaeger-toolkit-debug-apk` artifact and extract `app-debug.apk`.
+4. Install the APK on your Android phone. Allow installation from the app used to open the file if Android asks.
+
+The original instructions below are retained for historical reference. They describe legacy APKs and should not be treated as current compatibility guidance.
+
+---
+
 [![SL Scan](https://github.com/BiltuDas1/unlock-Bootloader/actions/workflows/shiftleft-analysis.yml/badge.svg)](https://github.com/BiltuDas1/unlock-Bootloader/actions/workflows/shiftleft-analysis.yml)
 [![Open Source Helpers](https://www.codetriage.com/biltudas1/unlock-bootloader/badges/users.svg)](https://www.codetriage.com/biltudas1/unlock-bootloader)
 ```
